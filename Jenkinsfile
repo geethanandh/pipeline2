@@ -18,7 +18,7 @@ pipeline {
     }
     stage ('Verify Tools'){
       steps {
-        parallel  sh "npm -v" 
+         sh "npm -v" 
 		}
       }
     }
