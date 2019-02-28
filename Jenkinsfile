@@ -1,6 +1,6 @@
 pipeline {
    agent {
-        docker { image 'nodejs-alpine' }
+        node 'NodejsAnandh'
     }
 
   stages {
