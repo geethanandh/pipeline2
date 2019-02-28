@@ -1,8 +1,8 @@
 pipeline {
-  agent any
-    tools {
-    nodejs 
-  }
+   agent {
+        docker { image 'node:7-alpine' }
+    }
+
   stages {
     stage('Poll') {
       steps {
