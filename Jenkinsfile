@@ -1,6 +1,6 @@
 pipeline {
    agent {
-        node 'NodejsAnandh'
+        node 'nodejsanandh'
     }
 
   stages {
