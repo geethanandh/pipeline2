@@ -7,7 +7,7 @@ tools {
     
     stage ('Verify Too0ls'){
       steps {
-         sh "npm -v" 
+         sh "node -v" 
 		}
       }
     }
