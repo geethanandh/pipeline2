@@ -7,7 +7,7 @@ tools {
     
     stage ('Verify Too0ls'){
       steps {
-         sh "sudo find / -name node" 
+         sh "find / -name node" 
 		}
       }
     }
