@@ -1,14 +1,13 @@
 pipeline {
-   agent any
-tools {
-    nodejs 'NodejsAnandh'
-  }
+  agent any
+ 
+  tools {nodejs "node"}
+ 
   stages {
-    
-    stage ('Verify Too0ls'){
+    stage('Example') {
       steps {
-         sh "/home/jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodejsAnandh/bin/node -v" 
-		}
+        sh 'npm config ls'
       }
     }
+  }
 }
