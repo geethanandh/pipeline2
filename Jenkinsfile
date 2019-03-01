@@ -7,7 +7,7 @@ tools {
     
     stage ('Verify Too0ls'){
       steps {
-         sh "node -v" 
+         sh "find / -name npm" 
 		}
       }
     }
