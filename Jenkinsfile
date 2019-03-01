@@ -7,7 +7,7 @@ tools {
     
     stage ('Verify Too0ls'){
       steps {
-         sh "find / -name node" 
+         sh "/home/jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodejsAnandh/bin/node -v" 
 		}
       }
     }
