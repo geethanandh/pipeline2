@@ -1,12 +1,11 @@
 pipeline {
-  agent any
- 
-  tools {nodejs "node"}
- 
+  agent { label 'A1' }
   stages {
     stage('Example') {
-      steps {
-        sh 'npm config ls'
+container(A1) {
+         steps {
+           sh 'npm -v'
+         }
       }
     }
   }
